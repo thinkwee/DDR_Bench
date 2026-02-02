@@ -30,8 +30,6 @@ DDR_Bench provides a framework for running and evaluating LLM-based data analysi
 
 ## Installation
 
-### Requirements
-
 - Python 3.10+
 - Required packages:
 
@@ -39,7 +37,7 @@ DDR_Bench provides a framework for running and evaluating LLM-based data analysi
 pip3 install -r requirements.txt
 ```
 
-### Running the Agent
+## Running the Agent
 
 1. Modify the configuration file `config.yaml` to set up paths and LLM settings.
 
@@ -64,19 +62,9 @@ python run_agent.py --scenario globem
 
 It will create a log directory at ``base_log_dir`` from ``config.yaml``, where all the agent trajectories, run metadata and insights are stored. The log directory is then used by the evaluation script to evaluate the agent's performance.
 
-### Agent Options
-
-| Option | Description |
-|--------|-------------|
-| `--scenario` | **Required**. One of: `mimic`, `10k`, `globem` |
-| `--config` | Path to config file (default: `config.yaml`) |
-| `--target-ids` | Comma-separated IDs to process (e.g., `patient_10000032`) |
-| `--overwrite` | Overwrite existing results if output directory exists |
-| `--retry-only` | Only retry previously failed analyses |
-
 > **Note**: Path configurations (`db_path`, `data_path`) and LLM settings (`provider`, `model`, `api_key`) should be set in `config.yaml`.
 
-### Running Evaluation
+## Running Evaluation
 
 Use `run_evaluation.py` to evaluate agent results using LLM-as-a-checker against ``data/*/qa.json`` . Like the agent runner, evaluation paths are also pulled from `config.yaml`:
 
@@ -90,14 +78,6 @@ python run_evaluation.py --scenario 10k --log-dir ./{base_log_dir}/10k
 # Evaluate GLOBEM results
 python run_evaluation.py --scenario globem --log-dir ./{base_log_dir}/globem
 ```
-
-### Evaluation Options
-
-| Option | Description |
-|--------|-------------|
-| `--scenario` | Required. One of: `mimic`, `10k`, `globem` |
-| `--output` | Output path for results JSON |
-| `--test-mode` | Run in test mode (process only first entity) |
 
 ## Configuration
 
