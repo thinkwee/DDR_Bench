@@ -1,8 +1,20 @@
+# Deep Data Research
+
 <p align="center">
-    <img src="logo.png" width="300" />
+  <img src="logo.png" alt="DDR Logo" width="150"/>
 </p>
 
-# Hunt Instead of Wait: Evaluating Deep Data Research on Large Language Models
+
+<p align="center">
+  <strong>Hunt Instead of Wait: Evaluating Deep Data Research on Large Language Models</strong>
+</p>
+
+
+<p align="center">
+    【🤗 <a href="https://huggingface.co/spaces/thinkwee/DDR_Bench">Project</a> | 📑 <a href="https://github.com/thinkwee/DDR_Bench">Paper</a>｜📊 <a href="https://huggingface.co/datasets/thinkwee/DDRBench_10K">Dataset</a>】
+</p>
+
+
 
 We introduce **DDR_Bench** (Deep Data Research Benchmark): A benchmark for evaluating LLM agents on autonomous data exploration and analysis tasks without predefined queries or goals.
 
