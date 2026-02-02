@@ -24,9 +24,9 @@ DDR_Bench provides a framework for running and evaluating LLM-based data analysi
 
 | Scenario | Domain | Data Type | Task |
 |----------|--------|-----------|------|
-| **MIMIC** | Healthcare | MIMIC-IV patient records | Extract clinical insights from patient notes |
-| **10-K** | Finance | SEC 10-K filings | Analyze company financial reports |
-| **GLOBEM** | Behavioral | GLOBEM wellness data | Discover patterns in user behavioral data |
+| **MIMIC** | Healthcare | MIMIC-IV patient records | Extract clinical insights from electronic health records |
+| **10-K** | Finance | SEC 10-K filings | Analyze XBRL filings data to get company financial insights |
+| **GLOBEM** | Behavioral | GLOBEM wearable data | Discover user well-beings from wearable data patterns |
 
 ## Installation
 
@@ -39,7 +39,7 @@ DDR_Bench provides a framework for running and evaluating LLM-based data analysi
 pip3 install -r requirements.txt
 ```
 
-### Setup
+### Running the Agent
 
 1. Modify the configuration file `config.yaml` to set up paths and LLM settings.
 
@@ -52,11 +52,9 @@ export AZURE_OPENAI_ENDPOINT="your-azure-endpoint"
 # Or other provider keys as needed
 ```
 
-3.  Running the Agent
+3.  Run
 
 Use `run_agent.py` to run data analysis agents. All configurations (LLM provider, model, data paths) are managed in `config.yaml`. See configuration section for more details.
-
-#### MIMIC Scenario (Patient Analysis)
 
 ```bash
 python run_agent.py --scenario mimic
