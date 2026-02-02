@@ -11,7 +11,7 @@
 
 
 <p align="center">
-    【🤗 <a href="https://huggingface.co/spaces/thinkwee/DDR_Bench">Project</a> | 📑 <a href="https://github.com/thinkwee/DDR_Bench">Paper</a>｜📊 <a href="https://huggingface.co/datasets/thinkwee/DDRBench_10K">Dataset</a>】
+    【🤗 <a href="https://huggingface.co/spaces/thinkwee/DDR_Bench">Project</a> | 📑 <a href="https://github.com/thinkwee/DDR_Bench">Paper</a>｜📊 <a href="https://huggingface.co/collections/thinkwee/ddrbench">Dataset</a>】
 </p>
 
 
