@@ -1,7 +1,7 @@
 # Deep Data Research
 
 <p align="center">
-  <img src="logo.png" alt="DDR Logo" width="150"/>
+  <img src="assets/logo.png" alt="DDR Logo" width="150"/>
 </p>
 
 
@@ -11,22 +11,26 @@
 
 
 <p align="center">
-    【🤗 <a href="https://huggingface.co/spaces/thinkwee/DDR_Bench">Project</a> | 📑 <a href="https://github.com/thinkwee/DDR_Bench">Paper</a>｜📊 <a href="https://huggingface.co/collections/thinkwee/ddrbench">Dataset</a>】
+    【🤗 <a href="https://huggingface.co/spaces/thinkwee/DDR_Bench">Project</a> | 📑 <a href="https://arxiv.org/abs/2602.02039">Paper</a>｜📊 <a href="https://huggingface.co/collections/thinkwee/ddrbench">Dataset</a>】
 </p>
 
 
 
-We introduce **DDR_Bench** (Deep Data Research Benchmark): A benchmark for evaluating LLM agents on autonomous data exploration and analysis tasks without predefined queries or goals.
+We introduce **DDR-Bench** (Deep Data Research Benchmark): A benchmark for evaluating LLM agents on autonomous data exploration and analysis tasks without predefined queries or goals.
 
 ## Overview
 
-DDR_Bench provides a framework for running and evaluating LLM-based data analysis agents across three real-world domains:
+DDR-Bench provides a framework for running and evaluating LLM-based data analysis agents across three real-world domains:
 
 | Scenario | Domain | Data Type | Task |
 |----------|--------|-----------|------|
 | **MIMIC** | Healthcare | MIMIC-IV patient records | Extract clinical insights from electronic health records |
 | **10-K** | Finance | SEC 10-K filings | Analyze XBRL filings data to get company financial insights |
 | **GLOBEM** | Behavioral | GLOBEM wearable data | Discover user well-beings from wearable data patterns |
+
+<p align="center">
+  <img src="assets/github_framework.png" alt="DDR Framework" width="600"/>
+</p>
 
 ## Installation
 
@@ -114,3 +118,7 @@ Set up your API keys as environment variables:
 | `AZURE_OPENAI_ENDPOINT` | Azure OpenAI endpoint URL |
 | `OPENAI_API_KEY` | OpenAI API key (if not using Azure) |
 | `MINIMAX_API_KEY` | MiniMax API key |
+
+## Data
+- The [checklist](https://github.com/thinkwee/DDR_Bench/tree/main/data), [database](https://huggingface.co/collections/thinkwee/ddrbench) and [agent trajectory](https://huggingface.co/datasets/thinkwee/DDRBench_10K_trajectory) are all open-sourced.
+- For the database and agent trajectory of MIMIC and GLOBEM, we will release them on the [PhysioNet](https://physionet.org/) soon. This is for the sake of data privacy on health data.
