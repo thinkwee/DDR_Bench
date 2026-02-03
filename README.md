@@ -29,7 +29,7 @@ DDR-Bench provides a framework for running and evaluating LLM-based data analysi
 | **GLOBEM** | Behavioral | GLOBEM wearable data | Discover user well-beings from wearable data patterns |
 
 <p align="center">
-  <img src="assets/github_framework.png" alt="DDR Framework" width="600"/>
+  <img src="assets/github_framework.png" alt="DDR Framework" width="1200"/>
 </p>
 
 ## Installation
