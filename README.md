@@ -1,7 +1,7 @@
 # Deep Data Research
 
 <p align="center">
-  <img src="assets/logo.png" alt="DDR Logo" width="150"/>
+  <img src="assets/social_preview.png" alt="DDR Logo" width="600"/>
 </p>
 
 
@@ -20,6 +20,10 @@ We introduce **DDR-Bench** (Deep Data Research Benchmark): A benchmark for evalu
 
 ## Overview
 
+<p align="center">
+  <img src="assets/github_framework.png" alt="DDR Framework" width="1200"/>
+</p>
+
 DDR-Bench provides a framework for running and evaluating LLM-based data analysis agents across three real-world domains:
 
 | Scenario | Domain | Data Type | Task |
@@ -27,10 +31,6 @@ DDR-Bench provides a framework for running and evaluating LLM-based data analysi
 | **MIMIC** | Healthcare | MIMIC-IV patient records | Extract clinical insights from electronic health records |
 | **10-K** | Finance | SEC 10-K filings | Analyze XBRL filings data to get company financial insights |
 | **GLOBEM** | Behavioral | GLOBEM wearable data | Discover user well-beings from wearable data patterns |
-
-<p align="center">
-  <img src="assets/github_framework.png" alt="DDR Framework" width="1200"/>
-</p>
 
 ## Installation
 
@@ -41,7 +41,7 @@ DDR-Bench provides a framework for running and evaluating LLM-based data analysi
 pip3 install -r requirements.txt
 ```
 
-## Running the Agent
+## Run the Agent
 
 1. Modify the configuration file `config.yaml` to set up paths and LLM settings.
 
@@ -68,7 +68,7 @@ It will create a log directory at ``base_log_dir`` from ``config.yaml``, where a
 
 > **Note**: Path configurations (`db_path`, `data_path`) and LLM settings (`provider`, `model`, `api_key`) should be set in `config.yaml`.
 
-## Running Evaluation
+## Run the Evaluation
 
 Use `run_evaluation.py` to evaluate agent results using LLM-as-a-checker against ``data/*/qa.json`` . Like the agent runner, evaluation paths are also pulled from `config.yaml`:
 
