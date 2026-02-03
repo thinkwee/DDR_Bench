@@ -21,7 +21,7 @@
     <img src="https://img.shields.io/badge/📊-alphaXiv-00d4aa?style=for-the-badge&labelColor=black" alt="alphaXiv">
   </a>
   <a href="https://huggingface.co/papers/2602.02039">
-    <img src="https://img.shields.io/badge/📑-Paper-ff6f00?style=for-the-badge&labelColor=black" alt="Paper">
+    <img src="https://img.shields.io/badge/📑-Huggingface_Papers-ff6f00?style=for-the-badge&labelColor=black" alt="Paper">
   </a>
   <a href="https://huggingface.co/collections/thinkwee/ddrbench">
     <img src="https://img.shields.io/badge/🗂️-Dataset-blue?style=for-the-badge&labelColor=black" alt="Dataset">
