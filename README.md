@@ -134,5 +134,18 @@ Set up your API keys as environment variables:
 | `MINIMAX_API_KEY` | MiniMax API key |
 
 ## Data
-- The [checklist](https://github.com/thinkwee/DDR_Bench/tree/main/data), [database](https://huggingface.co/collections/thinkwee/ddrbench) and [agent trajectory](https://huggingface.co/datasets/thinkwee/DDRBench_10K_trajectory) are all open-sourced.
-- For the database and agent trajectory of MIMIC and GLOBEM, we will release them on the [PhysioNet](https://physionet.org/) soon. This is for the sake of data privacy on health data.
+- 10 K
+  - The checklist, database, and agent trajectories are fully open sourced.
+  - Checklist https://github.com/thinkwee/DDR_Bench/tree/main/data
+  - Database https://huggingface.co/collections/thinkwee/ddrbench
+  - Agent trajectories https://huggingface.co/datasets/thinkwee/DDRBench_10K_trajectory
+- MIMIC
+  - Access requires certification from PhysioNet.
+  - Obtain certification and download the data from MIMIC IV v3.1 at https://physionet.org/content/mimiciv/3.1/
+  - Use ``scripts/construct_mimic_sqlite.py`` to convert the data into a SQLite database
+  - Update ``scenarios.mimic.db_path`` in ``config.yaml`` to point to the generated SQLite database
+- GLOBEM
+  - Access also requires certification from PhysioNet.
+  - Obtain certification and download the data from https://physionet.org/content/globem/1.1/
+  - Use ``scripts/process_globem.py`` to preprocess the data
+  - Update ``scenarios.globem.data_path`` in ``config.yaml`` to point to the processed data directory

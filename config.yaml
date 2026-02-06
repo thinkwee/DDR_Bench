@@ -33,7 +33,7 @@ scenarios:
   mimic:
     # MIMIC-IV patient data analysis
     # NOTE: db_path points to external MIMIC-IV database (READ-ONLY, do not modify)
-    db_path: "PATH_TO_MIMIC_IV_DB/mimic_iv.db" # Download from physionet.org, coming soon
+    db_path: "PATH_TO_MIMIC_IV_DB/mimic_iv.db" # Follow instructions in README.md to get the data
     id_file: "./data/mimic/entity_ids.json"  # List of 100 entity (patient) IDs
     qa_file: "./data/mimic/qa.json"  # QA file for evaluation
     log_dir: "./logs/mimic"
@@ -51,7 +51,7 @@ scenarios:
   globem:
     # GLOBEM behavioral data analysis
     # NOTE: data_path points to external GLOBEM processed data (READ-ONLY, do not modify)
-    data_path: "PATH_TO_GLOBEM_DB/" # Download from physionet.org, coming soon
+    data_path: "PATH_TO_GLOBEM_DB/" # Follow instructions in README.md to get the data
     id_file: "./data/globem/entity_ids.json"  # List of 91 entity (user) IDs
     qa_file: "./data/globem/qa.json"  # QA file for evaluation
     log_dir: "./logs/globem"
